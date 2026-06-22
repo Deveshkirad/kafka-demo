@@ -1,0 +1,17 @@
+services:
+  airflow:
+    build: .
+    container_name: airflow
+
+    ports:
+      - "8080:8080"
+
+    command: standalone
+
+    environment:
+
+      AIRFLOW__WEBSERVER__ENABLE_PROXY_FIX: "True"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./data:/opt/airflow/data
+      - ./output:/opt/airflow/output

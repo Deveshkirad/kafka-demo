@@ -1,0 +1,3 @@
+Message sent to John (john@gmail.com)
+Message sent to Shyam (shyam@gmail.com)
+Message sent to Amit (amit@gmail.com)
